@@ -225,7 +225,7 @@
 
 
     <!-- =======================================cart Section======[2]=============================================== -->
-    <section class="cart_section_on_right">
+    <div class="cart_section_on_right">
         <div class="cart">
             <h2 class="cart-title">Your Cart</h2>
 
@@ -246,20 +246,22 @@
                 <a href="shop.html" class="btn btn-dark btn-go-shopping">Go shopping</a>
             </div>
 
+            <section class="willbeHiddeniNEmpty">
 
-            <div class="total-cart-price justify-content-between  py-2 fs-6 w-100">
-                <div class="total-title">Total Price</div>
-                <div class="total-price">$0</div>
-            </div>
-            <div class="border-0 justify-content-center text-center w-100 last-item-inCart">
-                <button type="button" class="btn-buy btn btn-light w-100 rounded-0 py-2 px-4 my-2 fs-6">
-                    <strong>Checkout</strong>
-                </button>
-                <a class="text-dark fs-6" href="cartPage.html">View cart</a>
-            </div>
+                <div class="total-cart-price justify-content-between  py-2 fs-6 w-100">
+                    <div class="total-title">Total Price</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <div class="border-0 justify-content-center text-center w-100 last-item-inCart">
+                    <button type="button" class="btn-buy btn btn-light w-100 rounded-0 py-2 px-4 my-2 fs-6">
+                        <strong>Checkout</strong>
+                    </button>
+                    <a class="text-dark fs-6" href="cartPage.html">View cart</a>
+                </div>
+            </section>
             <i class="fa-solid fa-xmark" id="close-cart" onclick="close_cart()"></i>
         </div>
-    </section>
+    </div>
 
     <!-- =====================================[BreadCrumb Section]========[3]============================= -->
     <div class="BreadcrumbStart">
@@ -290,134 +292,104 @@
                 </div>
 
                 <div class="filter-btns">
-                    <button type="button" class="filter-btn" id="all">all</button>
-                    <button type="button" class="filter-btn" id="women">Women Cloths</button>
-                    <button type="button" class="filter-btn" id="men">Men Cloths</button>
-                    <button type="button" class="filter-btn" id="kid">Children cloths</button>
+                    <button type="button" class="filter-btn active" data-filter="all">All</button>
+                    <button type="button" class="filter-btn" data-filter="men">Men</button>
+                    <button type="button" class="filter-btn" data-filter="women">Women</button>
+                    <button type="button" class="filter-btn" data-filter="kids">Kids</button>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-3 col-md-12">
-                        <!-- All Category Filter -->
-                        <div class="collapse " id="filterCollapse">
-                            <div class="ms-5">
-
-                                <div class="row">
-                                    <div class="col-md-6 col-lg-12 mb-5">
-                                        <h5 class="font-weight-bold dark-grey-text"><strong>Category</strong></h5>
-                                        <div class="form-group">
-                                            <input class="form-check-input" name="group100" type="radio" id="radio100">
-                                            <label for="radio100" class="form-check-label dark-grey-text">All</label>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input class="form-check-input" name="group100" type="radio" id="radio101"
-                                                checked>
-                                            <label for="radio101" class="form-check-label dark-grey-text">Men
-                                                Clothes</label>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input class="form-check-input" name="group100" type="radio" id="radio102">
-                                            <label for="radio102" class="form-check-label dark-grey-text">Women
-                                                Clothes</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-check-input" name="group100" type="radio" id="radio103">
-                                            <label for="radio103" class="form-check-label dark-grey-text">Kids
-                                                Clothes</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-6 col-lg-12 mb-5">
-                                        <h5 class="font-weight-bold dark-grey-text"><strong>Price</strong></h5>
-                                        <form class="range-field mt-3">
-                                            <input id="calculatorSlider" class="no-border" type="range" value="0"
-                                                min="20" max="1000" />
-                                        </form>
-
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-6 text-left">
-                                                <p class="dark-grey-text"><strong id="resellerEarnings">0$</strong>
-                                                </p>
-                                            </div>
-
-                                            <div class="col-md-6 text-right">
-                                                <p class="dark-grey-text"><strong id="clientPrice">600$</strong></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+                <div class="price-filter">
+                    <h5>Price Range</h5>
+                    <div class="price-range">
+                        <input type="range" min="0" max="1000" value="0" id="priceRange">
+                        <div class="range-value">
+                            <span id="rangeValue">0</span>
                         </div>
-                        <button class="btn btn-primary ms-5 mt-5" data-bs-toggle="collapse"
-                            data-bs-target="#filterCollapse">
-                            <i class="fa fa-filter"></i> Filter
-                        </button>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-12">
+                        <div class="row filter-items">
+                            <div class="col-sm-12 col-md-6 col-lg-4 filter-item all men">
 
-                    <div class="col-lg-9 col-md-12">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6 col-lg-4">
-                                <div class="filter-items">
-                                    <div class="filter-item all men">
-                                        <div class="shopCentre">
-                                            <div class="product-item hover-effect-slide">
-                                                <div class="image-holder position-relative">
-                                                    <img src="images/product/MenCat.jpg" alt="categories"
-                                                        class="product-image img-fluid">
-                                                    <a href="#" class="btn-icon btn-eye-con">
-                                                        <i class="fa fa-eye"></i>
-                                                    </a>
-                                                    <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
-                                                        to cart</span>
-                                                </div>
-                                                <div class="product-content position-relative">
-                                                    <h5 class="text-uppercase fs-5 mt-3">
-                                                        <a href="single-product.html" class="product-name-a">T-shirt</a>
-                                                    </h5>
-                                                    <div class="product-price">
-                                                        <span class="new-price">$10</span>
-                                                        <span class="old-price">$25</span>
-                                                    </div>
-                                                    <div class="product-star">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                    </div>
-                                                </div>
+
+                                <div class="shopCentre">
+                                    <div class="product-item hover-effect-slide">
+                                        <div class="image-holder position-relative">
+                                            <img src="images/prod/1000.jpg" alt="Blouse" class="product-image img-fluid">
+                                            <a href="productDetails.html" class="btn-icon btn-eye-con">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                            <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
+                                                to cart</span>
+                                        </div>
+                                        <div class="product-content position-relative">
+                                            <h5 class="product-name text-uppercase fs-5 mt-3">
+                                                <a href="single-product.html">Jacket</a>
+                                            </h5>
+                                            <div class="product-price">
+                                                <span class="new-price">$185</span>
+                                                <span class="old-price">$225</span>
+                                            </div>
+                                            <div class="product-star">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item hover-effect-slide">
+                                        <div class="image-holder position-relative">
+                                            <img src="images/prod/1000.jpg" alt="Blouse" class="product-image img-fluid">
+                                            <a href="productDetails.html" class="btn-icon btn-eye-con">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                            <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
+                                                to cart</span>
+                                        </div>
+                                        <div class="product-content position-relative">
+                                            <h5 class="product-name text-uppercase fs-5 mt-3">
+                                                <a href="single-product.html">Jacket</a>
+                                            </h5>
+                                            <div class="product-price">
+                                                <span class="new-price">$185</span>
+                                                <span class="old-price">$225</span>
+                                            </div>
+                                            <div class="product-star">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+
                             </div>
 
-                            <div class="col-sm-12 col-md-6 col-lg-4">
-                                <div class="filter-items">
-                                    <div class="filter-item all men">
+                            <div class="col-sm-12 col-md-6 col-lg-4 filter-item all women" data-price="400">
+
                                         <div class="shopCentre">
                                             <div class="product-item hover-effect-slide">
                                                 <div class="image-holder position-relative">
-                                                    <img src="images/product/WomenCat.jpg" alt="categories"
+                                                    <img src="images/prod/1000.jpg" alt="Blouse"
                                                         class="product-image img-fluid">
-                                                    <a href="#" class="btn-icon btn-eye-con">
+                                                    <a href="productDetails.html" class="btn-icon btn-eye-con">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                     <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
                                                         to cart</span>
                                                 </div>
                                                 <div class="product-content position-relative">
-                                                    <h5 class="text-uppercase fs-5 mt-3">
-                                                        <a href="single-product.html" class="product-name-a">skirt</a>
+                                                    <h5 class="product-name text-uppercase fs-5 mt-3">
+                                                        <a href="single-product.html">Jacket</a>
                                                     </h5>
                                                     <div class="product-price">
-                                                        <span class="new-price">$19</span>
-                                                        <span class="old-price">$25</span>
+                                                        <span class="new-price">$399</span>
+                                                        <span class="old-price">$450</span>
                                                     </div>
                                                     <div class="product-star">
                                                         <i class="fa fa-star"></i>
@@ -429,30 +401,28 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                  
                             </div>
-                            <div class="col-sm-12 col-md-6 col-lg-4">
-                                <div class="filter-items">
-                                    <div class="filter-item all women">
+                            <div class="col-sm-12 col-md-6 col-lg-4 filter-item all kids "data-price="200">
+   
                                         <div class="shopCentre">
                                             <div class="product-item hover-effect-slide">
                                                 <div class="image-holder position-relative">
-                                                    <img src="images/product/MenCat.jpg" alt="categories"
+                                                    <img src="images/prod/1000.jpg" alt="Blouse"
                                                         class="product-image img-fluid">
-                                                    <a href="#" class="btn-icon btn-eye-con">
+                                                    <a href="productDetails.html" class="btn-icon btn-eye-con">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                     <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
                                                         to cart</span>
                                                 </div>
                                                 <div class="product-content position-relative">
-                                                    <h5 class="text-uppercase fs-5 mt-3">
-                                                        <a href="single-product.html" class="product-name-a">skirt</a>
+                                                    <h5 class="product-name text-uppercase fs-5 mt-3">
+                                                        <a href="single-product.html">Jacket</a>
                                                     </h5>
                                                     <div class="product-price">
-                                                        <span class="new-price">$19</span>
-                                                        <span class="old-price">$25</span>
+                                                        <span class="new-price">$200</span>
+                                                        <span class="old-price">$225</span>
                                                     </div>
                                                     <div class="product-star">
                                                         <i class="fa fa-star"></i>
@@ -464,30 +434,29 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                  
                             </div>
-                            <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="col-sm-12 col-md-6 col-lg-4" data-price="300">
                                 <div class="filter-items">
                                     <div class="filter-item all kid">
                                         <div class="shopCentre">
                                             <div class="product-item hover-effect-slide">
                                                 <div class="image-holder position-relative">
-                                                    <img src="images/product/WomenCat.jpg" alt="categories"
+                                                    <img src="images/prod/4.jpg" alt="Blouse"
                                                         class="product-image img-fluid">
-                                                    <a href="#" class="btn-icon btn-eye-con">
+                                                    <a href="productDetails.html" class="btn-icon btn-eye-con">
                                                         <i class="fa fa-eye"></i>
                                                     </a>
                                                     <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
                                                         to cart</span>
                                                 </div>
                                                 <div class="product-content position-relative">
-                                                    <h5 class="text-uppercase fs-5 mt-3">
-                                                        <a href="single-product.html" class="product-name-a">skirt</a>
+                                                    <h5 class="product-name text-uppercase fs-5 mt-3">
+                                                        <a href="single-product.html">Jacket</a>
                                                     </h5>
                                                     <div class="product-price">
-                                                        <span class="new-price">$19</span>
-                                                        <span class="old-price">$25</span>
+                                                        <span class="new-price">$290</span>
+                                                        <span class="old-price">$300</span>
                                                     </div>
                                                     <div class="product-star">
                                                         <i class="fa fa-star"></i>

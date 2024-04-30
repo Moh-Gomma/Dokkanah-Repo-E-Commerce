@@ -24,7 +24,6 @@
   <link rel="stylesheet" href="css/animate.css">
 
 
-
 </head>
 
 <body>
@@ -35,198 +34,203 @@
   <header>
     <!-- Top Nav  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/slider/1.png" alt="Logo" width="150" height="50">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="navbarNavLabel">Main Menu</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav  mb-lg-0 mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/slider/1.png" alt="Logo" width="150" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarNavLabel">Main Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav  mb-lg-0 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
 
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <button class="btn d-none d-lg-block" id="userIcon">
-                  <i class="fa-solid fa-user-tie fa-lg "></i>
-                </button>
-              </li>
-              <li class="nav-item d-none d-lg-block d-xl-block me-lg-3">
-                <button type="button" class="btn position-relative" onclick="open_cart()">
-                  <i class="fas fa-shopping-cart "></i>
-                  <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
-                    id="cartItemCount">0</span>
-                </button>
-              </li>
-              <li class="nav-item d-none d-lg-block d-xl-block">
-                <button class="btn btn-primary me-3" type="button" style="min-width: 100px;">Sell
-                  now</button>
-              </li>
-              <li class="nav-item">
-                <button id="searchIcon" class="btn">
-                  <i class="fas fa-search"></i>
-                </button>
-              </li>
-            </ul>
-          </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button class="btn d-none d-lg-block" id="userIcon">
+                                <i class="fa-solid fa-user-tie fa-lg "></i>
+                            </button>
+                        </li>
+                        <li class="nav-item d-none d-lg-block d-xl-block me-lg-3">
+                            <button type="button" class="btn position-relative" onclick="open_cart()">
+                                <i class="fas fa-shopping-cart "></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
+                                    id="cartItemCount">0</span>
+                            </button>
+                        </li>
+
+                        <li class="nav-item">
+                            <button id="searchIcon" class="btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
 
     <!-- Bottom Icons Section -->
     <div class="fixed-bottom bg-light d-lg-none">
-      <div class="container-fluid">
-        <div class="row justify-content-between">
-          <div class="col-4 text-center">
-            <button type="button" class="btn position-relative" onclick="open_cart()">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
-                id="cartItemCount_bottom">0</span>
-            </button>
-          </div>
-          <div class="col-4 text-center login_icon_user">
-            <button class="btn" type="button">
-              <i class="fa-solid fa-user fa-lg"></i>
-            </button>
-          </div>
-          <div class="col-4 text-center shop_icon_bottom">
-            <a href="shop.html" class="btn"> <i class="fa-solid fa-shop"></i></a>
-          </div>
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-4 text-center">
+                    <button type="button" class="btn position-relative" onclick="open_cart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
+                            id="cartItemCount_bottom">0</span>
+                    </button>
+                </div>
+                <div class="col-4 text-center login_icon_user">
+                    <button class="btn" type="button">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                    </button>
+                </div>
+                <div class="col-4 text-center shop_icon_bottom">
+                    <a href="shop.html" class="btn"> <i class="fa-solid fa-shop"></i></a>
+                </div>
 
+            </div>
         </div>
-      </div>
     </div>
-    <!-- Modal For Search -->
 
+    <!-- Modal For Search -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form class="search-form">
-              <input type="text" class="form-control" placeholder="Search...">
-              <button type="submit" class="btn btn-danger mt-2">Search</button>
-            </form>
-          </div>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="search-form ">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <button type="submit" class="btn btn-danger mt-2 ms-auto w-100">Search</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
 
     <!-- Modal For Signin Signup  -->
 
     <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
 
-          <div class="modal-header modal-links">
-            <!-- Sign In button -->
-            <h5 class="modal-link active" id="signInBtn">Sign In</h5>
-            <!-- Sign Up button -->
-            <h5 class="modal-link" id="signUpBtn">Sign Up</h5>
-            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-
-          <div class="modal-body">
-            <div id="signInForm" style="display: block;">
-              <form id="signinForm">
-                <div class="form-group">
-                  <label for="signinEmail">Email
-                    <span class="text-danger">*</span>
-                  </label>
-                  <input type="email" class="form-control" id="signinEmail" placeholder="Enter email" required>
+                <div class="modal-header modal-links">
+                    <!-- Sign In button -->
+                    <h5 class="modal-link active" id="signInBtn">Sign In</h5>
+                    <!-- Sign Up button -->
+                    <h5 class="modal-link" id="signUpBtn">Sign Up</h5>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="form-group">
-                  <label for="signinPassword">Password
-                    <span class="text-danger">*</span>
-                  </label>
-                  <input type="password" class="form-control" id="signinPassword" placeholder="Password" required>
-                </div>
-                <input type="submit" value="Login" class="btn btn-dark w-100 mb-3">
-              </form>
-              <p class="login-register_or_"><span class="login-register_line_"></span><span>or</span><span
-                  class="login-register_line_"></span></p>
-              <button type="button" class="btn  btn-dark w-100" id="returnToSignUp">Create New
-                Account</button>
 
+                <div class="modal-body">
+                    <div id="signInForm" style="display: block;">
+                        <form id="signinForm">
+                            <div class="form-group">
+                                <label for="signinEmail">Email
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="email" class="form-control" id="signinEmail" placeholder="Enter email"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="signinPassword">Password
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="password" class="form-control" id="signinPassword"
+                                    placeholder="Password" required>
+                            </div>
+                            <input type="submit" value="Login" class="btn btn-dark w-100 mb-3">
+                        </form>
+                        <p class="login-register_or_"><span class="login-register_line_"></span><span>or</span><span
+                                class="login-register_line_"></span></p>
+                        <button type="button" class="btn  btn-dark w-100" id="returnToSignUp">Create New
+                            Account</button>
+
+                    </div>
+
+                    <div id="signUpForm" style="display: none;">
+                        <form id="signupForm">
+                            <div class="form-group">
+                                <label for="signupName">Full Name
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="signupName"
+                                    placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="signupEmail">Email
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="email" class="form-control" id="signupEmail"
+                                    placeholder="Enter your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="signupPassword">Password
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="password" class="form-control" id="signupPassword"
+                                    placeholder="Enter a strong Password"
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                            </div>
+                            <div class="form-group">
+                                <label for="signupPassword">Confirm Password
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="password" class="form-control" i
+                                    placeholder="Enter Your Password again">
+                            </div>
+                            <input type="submit" class="btn btn-dark w-100" value="Create New Account">
+                        </form>
+                        <div id="signInButton">
+                            <p class="login-register_or_"><span
+                                    class="login-register_line_"></span><span>or</span><span
+                                    class="login-register_line_"></span></p>
+                            <button type="button" class="btn  btn-dark w-100" id="returnToSignIn">Sign In</button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-
-            <div id="signUpForm" style="display: none;">
-              <form id="signupForm">
-                <div class="form-group">
-                  <label for="signupName">Full Name
-                    <span class="text-danger">*</span>
-                  </label>
-                  <input type="text" class="form-control" id="signupName" placeholder="Enter your full name" required>
-                </div>
-                <div class="form-group">
-                  <label for="signupEmail">Email
-                    <span class="text-danger">*</span>
-                  </label>
-                  <input type="email" class="form-control" id="signupEmail" placeholder="Enter your Email" required>
-                </div>
-                <div class="form-group">
-                  <label for="signupPassword">Password
-                    <span class="text-danger">*</span>
-                  </label>
-                  <input type="password" class="form-control" id="signupPassword" placeholder="Enter a strong Password"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-                </div>
-                <div class="form-group">
-                  <label for="signupPassword">Confirm Password
-                    <span class="text-danger">*</span>
-                  </label>
-                  <input type="password" class="form-control" i placeholder="Enter Your Password again">
-                </div>
-                <input type="submit" class="btn btn-dark w-100" value="Create New Account">
-              </form>
-              <div id="signInButton">
-                <p class="login-register_or_"><span class="login-register_line_"></span><span>or</span><span
-                    class="login-register_line_"></span></p>
-                <button type="button" class="btn  btn-dark w-100" id="returnToSignIn">Sign In</button>
-              </div>
-
-            </div>
-          </div>
         </div>
-      </div>
 
 
 
     </div>
-  </header>
+</header>
 
 
   <!-- ========================= [Card Section] =======[2]============================== -->
-  <section class="cart_section_on_right">
+  <div class="cart_section_on_right">
     <div class="cart">
-        <h2 class="cart-title">Your Cart</h2>
+      <h2 class="cart-title">Your Cart</h2>
 
-        <div class="cart-content">
-            <div class="cart-box">
-                <!-- <img src="images/face3.jpg" class="cart-image" alt="">
+      <div class="cart-content">
+        <div class="cart-box">
+          <!-- <img src="images/face3.jpg" class="cart-image" alt="">
                 <div class="detail-box">
                     <div class="cart-product-title">Hello</div>
                     <div class="cart-price">$255</div>
@@ -234,27 +238,29 @@
                 </div>
                 <i class="fa-solid fa-trash-can cart-remove"></i> -->
 
-            </div>
         </div>
-        <div class="empty-cart">
-            <p>Your cart is empty.</p>
-            <a href="shop.html" class="btn btn-dark btn-go-shopping">Go shopping</a>
-        </div>
+      </div>
+      <div class="empty-cart">
+        <p>Your cart is empty.</p>
+        <a href="shop.html" class="btn btn-dark btn-go-shopping">Go shopping</a>
+      </div>
 
-        
+      <section class="willbeHiddeniNEmpty">
+
         <div class="total-cart-price justify-content-between  py-2 fs-6 w-100">
-            <div class="total-title">Total Price</div>
-            <div class="total-price">$0</div>
+          <div class="total-title">Total Price</div>
+          <div class="total-price">$0</div>
         </div>
         <div class="border-0 justify-content-center text-center w-100 last-item-inCart">
-            <button type="button" class="btn-buy btn btn-light w-100 rounded-0 py-2 px-4 my-2 fs-6">
-                <strong>Checkout</strong>
-            </button>
-            <a class="text-dark fs-6" href="/cart">View cart</a>
+          <button type="button" class="btn-buy btn btn-light w-100 rounded-0 py-2 px-4 my-2 fs-6">
+            <strong>Checkout</strong>
+          </button>
+          <a class="text-dark fs-6" href="cartPage.html">View cart</a>
         </div>
-        <i class="fa-solid fa-xmark" id="close-cart" onclick="close_cart()"></i>
+      </section>
+      <i class="fa-solid fa-xmark" id="close-cart" onclick="close_cart()"></i>
     </div>
-</section>
+  </div>
 
   <!-- ========================= Card Section End================================== -->
   <!-- =====================================[BreadCrumb Section]======================================================= -->
@@ -280,38 +286,138 @@
 
 
 
-  <div class="main-wrapper-product-details">
-    <div class="containeer">
-      <div class="productt-div">
-        <div class="productt-div-left">
-          <div class="img-containeer">
-            <img src="images/product/es.jpg" alt="watch">
-          </div>
-
+  <div class="col container productDetailsss">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="border rounded">
+          <a href="#">
+            <img src="images/product/MenCat.jpg" class="img-fluid rounded" alt="Image">
+          </a>
         </div>
-        <div class="productt-div-right">
-          <span class="productt-name">Cardigan - For Women</span>
-          <span class="productt-price">$ 50.25</span>
-          <div class="productt-rating">
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star-half-alt"></i></span>
-            <span>(350 ratings)</span>
+      </div>
+      <div class="col-lg-6">
+        <h4 class="fw-bold mb-3">T-shirt</h4>
+        <p class="mb-3">Category: Men</p>
+        <h5 class="fw-bold mb-3">500 $</h5>
+        <div class="d-flex mb-4">
+          <i class="fa-solid fa-star" style="color: #eba000;"></i>
+          <i class="fa-solid fa-star" style="color: #eba000;"></i>
+          <i class="fa-solid fa-star" style="color: #eba000;"></i>
+          <i class="fa-solid fa-star" style="color: #eba000;"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p class="mb-4 text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ullam illum quos eius
+          magnam corrupti laudantium eligendi eum non, provident neque omnis perspiciatis consequuntur minima harum? Vel
+          commodi vero illum..</p>
+        <div class="input-group quantity-detail mb-5" style="width: 100px;">
+          <div class="input-group-btn">
+            <button class="btn btn-sm btn-minus rounded-circle bg-light border">
+              <i class="fa fa-minus"></i>
+            </button>
           </div>
-          <p class="productt-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi ad
-            minima veritatis dolore. Architecto facere dignissimos voluptate fugit ratione molestias quis quidem
-            exercitationem voluptas.</p>
-          <div class="btn-groupss">
-            <a href="#" class="add-btn">Add to Cart</a>
-            <a href="cart.html" class="add-btn">Buy Now</a>
+          <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+          <div class="input-group-btn">
+            <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+              <i class="fa fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <a href="#" class="btn  btn-dark border  rounded-pill px-4 py-2 mb-4 ">
+          <i class="fa-solid fa-cart-plus"></i>
+           Add to cart</a>
+        <a href="checkout.html" class="btn border btn-danger rounded-pill px-4 py-2 mb-4 "> Buy Now</a>
+      </div>
+      <div class="col-lg-12">
+        <nav>
+          <div class="nav nav-tabs mb-3">
+            <button class="nav-link active  " type="button" role="tab" id="nav-about-tab"
+              data-bs-toggle="tab" data-bs-target="#nav-about" aria-controls="nav-about"
+              aria-selected="true">Description</button>
+            <button class="nav-link " type="button" role="tab" id="nav-mission-tab"
+              data-bs-toggle="tab" data-bs-target="#nav-mission" aria-controls="nav-mission"
+              aria-selected="false">Reviews</button>
+          </div>
+        </nav>
+        <div class="tab-content mb-5">
+          <div class="tab-pane active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eaque, veritatis, animi quos voluptatum
+              aperiam nesciunt nihil quae aliquid veniam reiciendis repellat dolorem qui accusamus, ipsum quis placeat
+              id asperiores. </p>
 
+          </div>
+          <div class="tab-pane" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
 
+              <div class="d-flex flex-column">
 
+                <div class="d-flex flex-column">
+                  <h5>Ahmed</h5>
+                  <div class="d-flex mb-3">
+                    <i class="fa-solid fa-star" style="color: #eba000;"></i>
+                    <i class="fa-solid fa-star" style="color: #eba000;"></i>
+                    <i class="fa-solid fa-star" style="color: #eba000;"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <p class="text-dark">Great xcnm,nvlknvlkodsjfopdsfjp </p>
+  
+              </div>
+              <div class="d-flex flex-column">
+
+                <div class="d-flex flex-column">
+                  <h5>Ahmed</h5>
+                  <div class="d-flex mb-3">
+                    <i class="fa-solid fa-star" style="color: #eba000;"></i>
+                    <i class="fa-solid fa-star" style="color: #eba000;"></i>
+                    <i class="fa-solid fa-star" style="color: #eba000;"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <p class="text-dark">Great xcnm,nvlknvlkodsjfopdsfjp </p>
+  
+            </div>
+            
+          </div>
+          <div class="tab-pane" id="nav-vision" role="tabpanel">
+            <p class="text-dark">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+              amet diam et eos labore. 3</p>
+            <p class="mb-0">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.
+              Clita erat ipsum et lorem et sit</p>
           </div>
         </div>
       </div>
+      <form action="#">
+        <h4 class="mb-5 fw-bold">Leave a Reply</h4>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border-bottom rounded">
+              <input type="text" class="form-control border-0 me-4" placeholder="Yur Name *">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="border-bottom rounded my-4">
+              <textarea name="reviewarea" id="reviewarea" class="form-control border-0" cols="30" rows="3"
+                placeholder="Your Review *" spellcheck="false"></textarea>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="d-flex justify-content-between py-3 mb-5">
+              <div class="d-flex align-items-center">
+                <p class="mb-0 me-3">Rate</p>
+                <div class="d-flex align-items-center" style="font-size: 12px;">
+                  <i class="fa-solid fa-star" style="color: #eba000;"></i>                  
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <a href="#" class="btn btn-dark rounded-pill px-4 py-3"> Submit </a>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 
@@ -320,81 +426,191 @@
 
 
 
+<!-- ===================================================Related Products========================================================================== -->
+<div class="top-seller-product m-5 wow fadeInDown">
+  <div class="container display-header   pb-4">
+    <h3 class="mt-3 text-center fw-bold">Related Products</h3>
+    <hr class="hr-btm mx-auto">
+  </div>
 
 
 
-  
+  <div class="swiper Bolla container">
+    <div class="swiper-wrapper" id="slider-top-selled">
+      <!-- Product cards -->
+      <div class="swiper-slide">
+        <div class="col">
+          <div class="product-item hover-effect-slide">
+            <div class="image-holder position-relative">
+              <img src="images/prod/4.jpg" alt="Blouse" class="product-image img-fluid">
+              <a href="productDetails.html" class="btn-icon btn-eye-con">
+                <i class="fa fa-eye"></i>
+              </a>
+              <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
+                to cart</span>
+            </div>
+            <div class="product-content position-relative">
+              <h5 class="product-name text-uppercase fs-5 mt-3">
+                <a href="single-product.html">Jacket</a>
+              </h5>
+              <div class="product-price">
+                <span class="new-price">$185</span>
+                <span class="old-price">$225</span>
+              </div>
+              <div class="product-star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second Cardooo -->
+      <div class="swiper-slide">
+        <div class="col">
+          <div class="product-item hover-effect-slide">
+            <div class="image-holder position-relative">
+              <img src="images/prod/1000.jpg" alt="Blouse" class="product-image img-fluid">
+              <a href="productDetails.html" class="btn-icon btn-eye-con">
+                <i class="fa fa-eye"></i>
+              </a>
+              <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
+                to cart</span>
+            </div>
+            <div class="product-content position-relative">
+              <h5 class="product-name text-uppercase fs-5 mt-3">
+                <a href="single-product.html">Skirt</a>
+              </h5>
+              <div class="product-price">
+                <span class="new-price">$185</span>
+                <span class="old-price">$225</span>
+              </div>
+              <div class="product-star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- third Card ooo -->
+      <div class="swiper-slide">
+        <div class="col">
+          <div class="product-item hover-effect-slide">
+            <div class="image-holder position-relative">
+              <img src="images/prod/10.jpg" alt="Blouse" class="product-image img-fluid">
+              <a href="#" class="btn-icon btn-eye-con">
+                <i class="fa fa-eye"></i>
+              </a>
+              <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
+                to cart</span>
+            </div>
+            <div class="product-content position-relative">
+              <h5 class="product-name text-uppercase fs-5 mt-3">
+                <a href="single-product.html">Shirt</a>
+              </h5>
+              <div class="product-price">
+                <span class="new-price">$185</span>
+                <span class="old-price">$225</span>
+              </div>
+              <div class="product-star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fourth Card -->
+
+      <!-- more if i wanted -->
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+
 
   <!-- ========================= Footer Section Start===========[11]===================== -->
 
   <section class="footery3m">
     <!-- footer-22 -->
     <div class="footer-tany py-3">
-        <div class="container py-lg-2">
-            <div class="text-txt row">
-                <div class="left-side col-lg-4">
-                    <h3><a class="logo-footer" href="index.html">
-                            Dokkanah<span class="lohny">S</span>tore</a></h3>
+      <div class="container py-lg-2">
+        <div class="text-txt row">
+          <div class="left-side col-lg-4">
+            <h3><a class="logo-footer" href="index.html">
+                Dokkanah<span class="lohny">S</span>tore</a></h3>
 
 
-                    <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
-                        consectetur.Vivamus
-                        a ligula quam. Ut blandit eu leo non suscipit. </p>
+            <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+              consectetur.Vivamus
+              a ligula quam. Ut blandit eu leo non suscipit. </p>
 
-                    <div class="social mt-lg-5 mt-4">
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <div class="social mt-lg-5 mt-4">
+              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
 
-                    </div>
+            </div>
+          </div>
+
+          <div class="right-side col-lg-8 pl-lg-4">
+
+            <div class="sub-columns">
+              <div class="sub-one-left">
+                <h6>Common Links</h6>
+                <div class="footer-tany-ul">
+                  <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Specia</a></li>
+                  </ul>
+
                 </div>
 
-                <div class="right-side col-lg-8 pl-lg-4">
-
-                    <div class="sub-columns">
-                        <div class="sub-one-left">
-                            <h6>Common Links</h6>
-                            <div class="footer-tany-ul">
-                                <ul>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="contact.html">Specia</a></li>
-                                </ul>
-
-                            </div>
-
-                        </div>
-                        <div class="sub-two-right">
-                            <h6>We accept:</h6>
-                            <ul>
-                                <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-visa"></i></a>
-                                </li>
-                                <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
-                                </li>
-                                <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-paypal"></i></a>
-                                </li>
-                                <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-amex"></i></a>
-                                </li>
-                            </ul>
-                            <h6>Customer Service</h6>
-                            <ul class="help-support">
-                                <li><a href="#">contact</a></li>
-                                <li><a href="contact.html">Support</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div class="sub-two-right">
+                <h6>We accept:</h6>
+                <ul>
+                  <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-visa"></i></a>
+                  </li>
+                  <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+                  </li>
+                  <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+                  </li>
+                  <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-amex"></i></a>
+                  </li>
+                </ul>
+                <h6>Customer Service</h6>
+                <ul class="help-support">
+                  <li><a href="#">contact</a></li>
+                  <li><a href="contact.html">Support</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="columns col-lg-6 text-lg-right">
-                <p>© 2024 Dokkanah. All rights reserved. </a>
-                </p>
-            </div>
-            <button onclick="topFunction()" id="movetop" title="Go to top">
-                <i class="fa-solid fa-caret-up"></i>
-            </button>
+          </div>
         </div>
+        <div class="columns col-lg-6 text-lg-right">
+          <p>© 2024 Dokkanah. All rights reserved. </a>
+          </p>
+        </div>
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+          <i class="fa-solid fa-caret-up"></i>
+        </button>
+      </div>
     </div>
-</section>
+  </section>
   <!-- ========================= Footer Section End================================ -->
 
 
