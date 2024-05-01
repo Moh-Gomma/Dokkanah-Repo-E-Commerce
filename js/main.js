@@ -175,18 +175,9 @@ filterBtns.forEach(btn => {
     });
 });
 
-priceRange.addEventListener('input', () => {
-    rangeValue.textContent = `$${priceRange.value}`;
-    filterItems.forEach(item => {
-        const price = parseFloat(item.dataset.price);
-        if (price <= priceRange.value) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
-    });
-});
+
 // ==================================================================================
+
 
 document.getElementById('searchIcon').addEventListener('click', function () {
   $('#searchModal').modal('show');
