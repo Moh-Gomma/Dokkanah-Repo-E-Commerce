@@ -823,18 +823,7 @@ p {
   color: var(--main-color);
 }
 
-.footery3m .right-side h4 {
-  font-size: 36px;
-  line-height: 46px;
-  font-family: "Luckiest Guy", cursive;
-  color: #fff;
-  font-weight: normal;
-}
 
-.footery3m .right-side span {
-  color: var(--main-color);
-  font-family: "Luckiest Guy", cursive;
-}
 
 
 .footery3m #movetop {
