@@ -238,4 +238,4 @@ buttons.forEach(function(button) {
 });
 
 
-// DASHBOARD PANEL 
+// Account Page

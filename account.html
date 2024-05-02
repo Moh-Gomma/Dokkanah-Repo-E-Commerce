@@ -7,21 +7,16 @@
     <title>Account</title>
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <!-- Fav iCon -->
-    <link rel="icon" type="image/x-icon" href="images/Logo.png">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
     <!-- Link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Link Favcon Icon -->
     <link rel="icon" type="image/x-icon" href="images/features/favcon.png">
 
-    <!-- Link Wow Js Library -->
-    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -32,10 +27,11 @@
 
     <!-- Navigation Bar[===========================[1] -->
 
+
     <header>
         <!-- Top Nav  -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="images/slider/1.png" alt="Logo" width="150" height="50">
                 </a>
@@ -78,10 +74,7 @@
                                         id="cartItemCount">0</span>
                                 </button>
                             </li>
-                            <li class="nav-item d-none d-lg-block d-xl-block">
-                                <button class="btn btn-primary me-3" type="button" style="min-width: 100px;">Sell
-                                    now</button>
-                            </li>
+
                             <li class="nav-item">
                                 <button id="searchIcon" class="btn">
                                     <i class="fas fa-search"></i>
@@ -116,8 +109,8 @@
                 </div>
             </div>
         </div>
-        <!-- Modal For Search -->
 
+        <!-- Modal For Search -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -125,9 +118,9 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form class="search-form">
+                        <form class="search-form ">
                             <input type="text" class="form-control" placeholder="Search...">
-                            <button type="submit" class="btn btn-danger mt-2">Search</button>
+                            <button type="submit" class="btn btn-danger mt-2 ms-auto w-100">Search</button>
                         </form>
                     </div>
                 </div>
@@ -146,7 +139,8 @@
                         <h5 class="modal-link active" id="signInBtn">Sign In</h5>
                         <!-- Sign Up button -->
                         <h5 class="modal-link" id="signUpBtn">Sign Up</h5>
-                        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"
+                            style="position: absolute; top: 20px; right: 20px;"></button>
                     </div>
 
                     <div class="modal-body">
@@ -228,217 +222,192 @@
 
 
     <!-- =======================================cart Section===================================================== -->
-    
     <div class="cart_section_on_right">
         <div class="cart">
-          <h2 class="cart-title">Your Cart</h2>
-    
-          <div class="cart-content">
-            <div class="cart-box">
-              <!-- <img src="images/face3.jpg" class="cart-image" alt="">
+            <h2 class="cart-title">Your Cart</h2>
+
+            <div class="cart-content">
+                <div class="cart-box">
+                    <!-- <img src="images/face3.jpg" class="cart-image" alt="">
                     <div class="detail-box">
                         <div class="cart-product-title">Hello</div>
                         <div class="cart-price">$255</div>
                         <input type="number" value="1" min="1" class="cart-quantity">
                     </div>
                     <i class="fa-solid fa-trash-can cart-remove"></i> -->
-    
+
+                </div>
             </div>
-          </div>
-          <div class="empty-cart">
-            <p>Your cart is empty.</p>
-            <a href="shop.html" class="btn btn-dark btn-go-shopping">Go shopping</a>
-          </div>
-    
-          <section class="willbeHiddeniNEmpty">
-    
-            <div class="total-cart-price justify-content-between  py-2 fs-6 w-100">
-              <div class="total-title">Total Price</div>
-              <div class="total-price">$0</div>
+            <div class="empty-cart">
+                <p>Your cart is empty.</p>
+                <a href="shop.html" class="btn btn-dark btn-go-shopping">Go shopping</a>
             </div>
-            <div class="border-0 justify-content-center text-center w-100 last-item-inCart">
-              <button type="button" class="btn-buy btn btn-light w-100 rounded-0 py-2 px-4 my-2 fs-6">
-                <strong>Checkout</strong>
-              </button>
-              <a class="text-dark fs-6" href="cartPage.html">View cart</a>
-            </div>
-          </section>
-          <i class="fa-solid fa-xmark" id="close-cart" onclick="close_cart()"></i>
+
+            <section class="willbeHiddeniNEmpty">
+
+                <div class="total-cart-price justify-content-between  py-2 fs-6 w-100">
+                    <div class="total-title">Total Price</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <div class="border-0 justify-content-center text-center w-100 last-item-inCart">
+                    <button type="button" class="btn-buy btn btn-light w-100 rounded-0 py-2 px-4 my-2 fs-6">
+                        <strong>Checkout</strong>
+                    </button>
+                    <a class="text-dark fs-6" href="cartPage.html">View cart</a>
+                </div>
+            </section>
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="close_cart()"></i>
         </div>
-      </div>
+    </div>
     <!-- =====================================[BreadCrumb Section]======================================================= -->
 
-    <div class="BreadcrumbStart">
-        <div class="BreadcrumbS_Wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="bradcaump__inner text-center">
-                            <h2 class="bradcaump-title">Account</h2>
-                            <nav class="bradcaump-inner">
-                                <a class="breadcrumb-item" href="index.html">Home</a>
-                                <span class="brd-separetor">/</span>
-                                <span class="breadcrumb-item active">account</span>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container mt-5 mb-5">
+        <div class="accountt-head d-flex justify-content-between">
+            <h1>Account</h1>
+            <a href="#" class="log_out_account text-decoration-none">Log out</a>
         </div>
+        <h4 class="mt-3 mt-md-2"> Mohamed , <span class="text-secondary">mohamed@gmail.com</span></h4>
+        <hr class="mt-4 row col-12 col-lg-7">
+
+
+
+        <div class="mt-2 col-12 col-lg-9">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a  class="btn  active" id="ordersBtn" onclick="showOrders()">My Orders</a>
+              <a  class="btn " id="accountInfoBtn" onclick="showAccountInfo()">Account Info</a>
+            </div>
+            <div id="orders" class="border-custom mt-5 col-12 col-lg-9">
+              <h4>Order List</h4>
+              <div class="order-div-list mt-5">
+                <div class="card-body cartBody">
+                  <div class="d-flex align-items-center bg-light p-4 rounded-4">
+                    <div class="productImage">
+                      <img src="images/prod/12.jpg" style="width: 90px; height: 90px; border-radius: 50%;" alt="Product Image" />
+                    </div>
+                    <div class="ms-3">
+                      <h5 class="productName">Shirt</h5>
+                      <p class="price">$19.99</p>
+                      <div class="color" style="background-color: #000;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accountinfo" class="hidden-class-info mt-5 col-12 col-lg-9">
+              <h2 class="mb-3">Account Information</h2>
+              <form>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="name">
+                </div>
+                <button type="submit" class="btn btn-dark">Update Info</button>
+              </form>
+            </div>
+          </div>
     </div>
 
-
-    <!-- ==========================================[Product]================================================== -->
-
-
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-12 col-md-4 mb-3">
-                <div class="card text-white bg-primary">
-                    <div class="card-body">
-                        <h5 class="card-title">Total Sales</h5>
-                        <p class="card-text">2k</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-3">
-                <div class="card text-white bg-success">
-                    <div class="card-body">
-                        <h5 class="card-title">Products Sold</h5>
-                        <p class="card-text">20</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-3">
-                <div class="card text-white bg-warning">
-                    <div class="card-body">
-                        <h5 class="card-title">Active Users</h5>
-                        <p class="card-text">10</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-12">
-                <h2>Product Management</h2>
-                <table class="table">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>T-Shirt</td>
-                            <td>$19.99</td>
-                            <td>In Stock</td>
-                            <td>
-                                <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
-                            </td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+    <!-- ==========================================[Account]================================================== -->
 
 
-    <!-- ========================= Footer Section Start===========[11]===================== -->
 
-    <section class="footery3m">
-        <!-- footer-22 -->
+    <!-- ========================= Footer Section Start================================ -->
+    <div class="footery3m">
         <div class="footer-tany py-3">
-            <div class="container py-lg-2">
-                <div class="text-txt row">
-                    <div class="left-side col-lg-4">
-                        <h3><a class="logo-footer" href="index.html">
-                                Dokkanah<span class="lohny">S</span>tore</a></h3>
-
-
-                        <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
-                            consectetur.Vivamus
-                            a ligula quam. Ut blandit eu leo non suscipit. </p>
-
-                        <div class="social mt-lg-5 mt-4">
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-
-                        </div>
-                    </div>
-
-                    <div class="right-side col-lg-8 pl-lg-4">
-
-                        <div class="sub-columns">
-                            <div class="sub-one-left">
-                                <h6>Common Links</h6>
-                                <div class="footer-tany-ul">
-                                    <ul>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="contact.html">Specia</a></li>
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                            <div class="sub-two-right">
-                                <h6>We accept:</h6>
-                                <ul>
-                                    <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-visa"></i></a>
-                                    </li>
-                                    <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
-                                    </li>
-                                    <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-paypal"></i></a>
-                                    </li>
-                                    <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-amex"></i></a>
-                                    </li>
-                                </ul>
-                                <h6>Customer Service</h6>
-                                <ul class="help-support">
-                                    <li><a href="#">contact</a></li>
-                                    <li><a href="contact.html">Support</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+          <div class="container py-lg-2">
+            <div class="text-txt row">
+              <div class="left-side col-lg-4">
+                <h3><img src="images/slider/footer.png" style="width: 200px; height: 50px;" =""></h3>
+    
+    
+                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+                  consectetur.Vivamus
+                  a ligula quam. Ut blandit eu leo non suscipit. </p>
+    
+                <div class="social mt-lg-5 mt-4">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    
                 </div>
-                <div class="columns col-lg-6 text-lg-right">
-                    <p>© 2024 Dokkanah. All rights reserved. </a>
-                    </p>
+              </div>
+    
+              <div class="right-side col-lg-8 pl-lg-4">
+    
+                <div class="sub-columns">
+                  <div class="sub-one-left">
+                    <h6>Common Links</h6>
+                    <div class="footer-tany-ul">
+                      <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a >Blog</a></li>
+                        <li><a href="contact.html">Special</a></li>
+                      </ul>
+    
+                    </div>
+    
+                  </div>
+                  <div class="sub-two-right">
+                    <h6>We accept:</h6>
+                    <ul>
+                      <li><a class="pay-method" ><i class="fa-brands fa-cc-visa"></i></a>
+                      </li>
+                      <li><a class="pay-method" ><i class="fa-brands fa-cc-mastercard"></i></a>
+                      </li>
+                      <li><a class="pay-method" ><i class="fa-brands fa-cc-paypal"></i></a>
+                      </li>
+                      <li><a class="pay-method" ><i class="fa-brands fa-cc-amex"></i></a>
+                      </li>
+                    </ul>
+                    <h6>Customer Service</h6>
+                    <ul class="help-support">
+                      <li><a href="contact.html">contact</a></li>
+                      <li><a href="faq.html">FAq</a></li>
+                    </ul>
+                  </div>
                 </div>
-                <button onclick="topFunction()" id="movetop" title="Go to top">
-                    <i class="fa-solid fa-caret-up"></i>
-                </button>
+              </div>
             </div>
+            <div class="columns col-lg-6 text-lg-right">
+              <p>© 2024 Dokkanah. All rights reserved. </a>
+              </p>
+            </div>
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+              <i class="fa-solid fa-caret-up"></i>
+            </button>
+          </div>
         </div>
-    </section>
-    <!-- ========================= Footer Section End================================ -->
+      </div>
 
 
 
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <!-- Main Js -->
-    <script src="js/main.js"></script>
-    <!-- On Sale Items -->
-    <script src="js/on_sale_items.js"></script>
+
+    <script>
+        function showOrders() {
+          document.getElementById("orders").style.display = "block";
+          document.getElementById("accountinfo").style.display = "none";
+          document.getElementById("ordersBtn").classList.add("active");
+          document.getElementById("accountInfoBtn").classList.remove("active");
+        }
+      
+        function showAccountInfo() {
+          document.getElementById("orders").style.display = "none";
+          document.getElementById("accountinfo").style.display = "block";
+          document.getElementById("ordersBtn").classList.remove("active");
+          document.getElementById("accountInfoBtn").classList.add("active");
+        }
+      
+        showOrders();
+      </script>
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Wow Js Liberary -->
-    <script src="js/wow.min.js"></script>
-    <!-- Link aos Liberary -->
-    <script src="js/vendor/aos.js"></script>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
         integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -446,8 +415,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        new WOW().init();
-    </script>
+
+    <!-- Main Js -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>

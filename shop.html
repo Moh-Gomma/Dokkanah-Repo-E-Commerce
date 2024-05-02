@@ -7,7 +7,6 @@
     <title>Shop</title>
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Link Swiper's CSS -->
@@ -23,9 +22,7 @@
 
 <body>
 
-
     <div class="loader"></div>
-
 
     <!---- =============================== Navigation Bar[1]==========================[1] -->
 
@@ -221,7 +218,6 @@
         </div>
     </header>
 
-
     <!-- =======================================cart Section======[2]=============================================== -->
     <div class="cart_section_on_right">
         <div class="cart">
@@ -288,186 +284,100 @@
                 <div class="title">
                     <h1>Featured Products</h1>
                 </div>
-
-                <div class="filter-btns">
+    
+                <div class="filter-btns mb-5">
                     <button type="button" class="filter-btn active" data-filter="all">All</button>
                     <button type="button" class="filter-btn" data-filter="men">Men</button>
                     <button type="button" class="filter-btn" data-filter="women">Women</button>
                     <button type="button" class="filter-btn" data-filter="kids">Kids</button>
                 </div>
-                <div class="price-filter">
-                    <h5>Price Range</h5>
-                    <div class="price-range">
-                        <input type="range" min="100" max="1000" value="10" step="5" id="priceRange">
-                        <div class="range-value">
-                            <span id="rangeValue">0</span>
+    
+    
+                <div class="row filter-items">
+                    <div class="col-lg-4 col-md-6 col-sm-12 filter-item all men" data-price="100">
+                        <div class="shopCentre">
+                            <div class="product-item hover-effect-slide">
+                                <div class="image-holder position-relative">
+                                    <img src="images/prod/1000.jpg" alt="Blouse" class="product-image img-fluid">
+                                    <a href="productDetails.html" class="btn-icon btn-eye-con">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add to cart</span>
+                                </div>
+                                <div class="product-content position-relative">
+                                    <h5 class="product-name text-uppercase fs-5 mt-3">
+                                        <a href="single-product.html">Jacket</a>
+                                    </h5>
+                                    <div class="product-price">
+                                        <span class="new-price">$185</span>
+                                        <span class="old-price">$225</span>
+                                    </div>
+                                    <div class="product-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col col-md-12">
-                        <div class="row filter-items">
-                            <div class="col-sm-12 col-md-6 col-lg-4 filter-item all men">
-
-
-                                <div class="shopCentre">
-                                    <div class="product-item hover-effect-slide">
-                                        <div class="image-holder position-relative">
-                                            <img src="images/prod/1000.jpg" alt="Blouse"
-                                                class="product-image img-fluid">
-                                            <a href="productDetails.html" class="btn-icon btn-eye-con">
-                                                <i class="fa fa-eye"></i>
-                                            </a>
-                                            <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
-                                                to cart</span>
-                                        </div>
-                                        <div class="product-content position-relative">
-                                            <h5 class="product-name text-uppercase fs-5 mt-3">
-                                                <a href="single-product.html">Jacket</a>
-                                            </h5>
-                                            <div class="product-price">
-                                                <span class="new-price">$185</span>
-                                                <span class="old-price">$225</span>
-                                            </div>
-                                            <div class="product-star">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
+    
+                    <div class="col-lg-4 col-md-6 col-sm-12 filter-item all women" data-price="400">
+                        <div class="shopCentre">
+                            <div class="product-item hover-effect-slide">
+                                <div class="image-holder position-relative">
+                                    <img src="images/prod/1000.jpg" alt="Blouse" class="product-image img-fluid">
+                                    <a href="productDetails.html" class="btn-icon btn-eye-con">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add to cart</span>
+                                </div>
+                                <div class="product-content position-relative">
+                                    <h5 class="product-name text-uppercase fs-5 mt-3">
+                                        <a href="single-product.html">Jacket</a>
+                                    </h5>
+                                    <div class="product-price">
+                                        <span class="new-price">$399</span>
+                                        <span class="old-price">$450</span>
                                     </div>
-                                    <div class="product-item hover-effect-slide">
-                                        <div class="image-holder position-relative">
-                                            <img src="images/prod/1000.jpg" alt="Blouse"
-                                                class="product-image img-fluid">
-                                            <a href="productDetails.html" class="btn-icon btn-eye-con">
-                                                <i class="fa fa-eye"></i>
-                                            </a>
-                                            <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
-                                                to cart</span>
-                                        </div>
-                                        <div class="product-content position-relative">
-                                            <h5 class="product-name text-uppercase fs-5 mt-3">
-                                                <a href="single-product.html">Jacket</a>
-                                            </h5>
-                                            <div class="product-price">
-                                                <span class="new-price">$185</span>
-                                                <span class="old-price">$225</span>
-                                            </div>
-                                            <div class="product-star">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
+                                    <div class="product-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
                                     </div>
                                 </div>
-
-
                             </div>
-
-                            <div class="col-sm-12 col-md-6 col-lg-4 filter-item all women" data-price="400">
-
-                                <div class="shopCentre">
-                                    <div class="product-item hover-effect-slide">
-                                        <div class="image-holder position-relative">
-                                            <img src="images/prod/1000.jpg" alt="Blouse"
-                                                class="product-image img-fluid">
-                                            <a href="productDetails.html" class="btn-icon btn-eye-con">
-                                                <i class="fa fa-eye"></i>
-                                            </a>
-                                            <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
-                                                to cart</span>
-                                        </div>
-                                        <div class="product-content position-relative">
-                                            <h5 class="product-name text-uppercase fs-5 mt-3">
-                                                <a href="single-product.html">Jacket</a>
-                                            </h5>
-                                            <div class="product-price">
-                                                <span class="new-price">$399</span>
-                                                <span class="old-price">$450</span>
-                                            </div>
-                                            <div class="product-star">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 col-sm-12 filter-item all kids" data-price="200">
+                        <div class="shopCentre">
+                            <div class="product-item hover-effect-slide">
+                                <div class="image-holder position-relative">
+                                    <img src="images/prod/1000.jpg" alt="Blouse" class="product-image img-fluid">
+                                    <a href="productDetails.html" class="btn-icon btn-eye-con">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add to cart</span>
                                 </div>
-
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-4 filter-item all kids " data-price="200">
-
-                                <div class="shopCentre">
-                                    <div class="product-item hover-effect-slide">
-                                        <div class="image-holder position-relative">
-                                            <img src="images/prod/1000.jpg" alt="Blouse"
-                                                class="product-image img-fluid">
-                                            <a href="productDetails.html" class="btn-icon btn-eye-con">
-                                                <i class="fa fa-eye"></i>
-                                            </a>
-                                            <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
-                                                to cart</span>
-                                        </div>
-                                        <div class="product-content position-relative">
-                                            <h5 class="product-name text-uppercase fs-5 mt-3">
-                                                <a href="single-product.html">Jacket</a>
-                                            </h5>
-                                            <div class="product-price">
-                                                <span class="new-price">$200</span>
-                                                <span class="old-price">$225</span>
-                                            </div>
-                                            <div class="product-star">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
+                                <div class="product-content position-relative">
+                                    <h5 class="product-name text-uppercase fs-5 mt-3">
+                                        <a href="single-product.html">Jacket</a>
+                                    </h5>
+                                    <div class="product-price">
+                                        <span class="new-price">$200</span>
+                                        <span class="old-price">$225</span>
                                     </div>
-                                </div>
-
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-4" data-price="300">
-                                <div class="filter-items">
-                                    <div class="filter-item all kid">
-                                        <div class="shopCentre">
-                                            <div class="product-item hover-effect-slide">
-                                                <div class="image-holder position-relative">
-                                                    <img src="images/prod/4.jpg" alt="Blouse"
-                                                        class="product-image img-fluid">
-                                                    <a href="productDetails.html" class="btn-icon btn-eye-con">
-                                                        <i class="fa fa-eye"></i>
-                                                    </a>
-                                                    <span class="btn btn-dark w-100 mt-2 rounded-3 add-cart-btnnn">Add
-                                                        to cart</span>
-                                                </div>
-                                                <div class="product-content position-relative">
-                                                    <h5 class="product-name text-uppercase fs-5 mt-3">
-                                                        <a href="single-product.html">Jacket</a>
-                                                    </h5>
-                                                    <div class="product-price">
-                                                        <span class="new-price">$290</span>
-                                                        <span class="old-price">$300</span>
-                                                    </div>
-                                                    <div class="product-star">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="product-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
                                     </div>
                                 </div>
                             </div>
@@ -477,81 +387,75 @@
             </div>
         </div>
     </div>
-    <!-- ======================================================================================= -->
-
-
-
 
     <!-- ========================= Footer Section Start===========[5]===================== -->
 
-    <section class="footery3m">
-        <!-- footer-22 -->
+    <div class="footery3m">
         <div class="footer-tany py-3">
-            <div class="container py-lg-2">
-                <div class="text-txt row">
-                    <div class="left-side col-lg-4">
-                        <h3><a class="logo-footer" href="index.html">
-                                Dokkanah<span class="lohny">S</span>tore</a></h3>
-
-
-                        <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
-                            consectetur.Vivamus
-                            a ligula quam. Ut blandit eu leo non suscipit. </p>
-
-                        <div class="social mt-lg-5 mt-4">
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-
-                        </div>
-                    </div>
-
-                    <div class="right-side col-lg-8 pl-lg-4">
-
-                        <div class="sub-columns">
-                            <div class="sub-one-left">
-                                <h6>Common Links</h6>
-                                <div class="footer-tany-ul">
-                                    <ul>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="contact.html">Specia</a></li>
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                            <div class="sub-two-right">
-                                <h6>We accept:</h6>
-                                <ul>
-                                    <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-visa"></i></a>
-                                    </li>
-                                    <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
-                                    </li>
-                                    <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-paypal"></i></a>
-                                    </li>
-                                    <li><a class="pay-method" href="#"><i class="fa-brands fa-cc-amex"></i></a>
-                                    </li>
-                                </ul>
-                                <h6>Customer Service</h6>
-                                <ul class="help-support">
-                                    <li><a href="#">contact</a></li>
-                                    <li><a href="contact.html">Support</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+          <div class="container py-lg-2">
+            <div class="text-txt row">
+              <div class="left-side col-lg-4">
+                <h3><img src="images/slider/footer.png" style="width: 200px; height: 50px;" =""></h3>
+    
+    
+                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+                  consectetur.Vivamus
+                  a ligula quam. Ut blandit eu leo non suscipit. </p>
+    
+                <div class="social mt-lg-5 mt-4">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    
                 </div>
-                <div class="columns col-lg-6 text-lg-right">
-                    <p>© 2024 Dokkanah. All rights reserved. </a>
-                    </p>
+              </div>
+    
+              <div class="right-side col-lg-8 pl-lg-4">
+    
+                <div class="sub-columns">
+                  <div class="sub-one-left">
+                    <h6>Common Links</h6>
+                    <div class="footer-tany-ul">
+                      <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a >Blog</a></li>
+                        <li><a href="contact.html">Special</a></li>
+                      </ul>
+    
+                    </div>
+    
+                  </div>
+                  <div class="sub-two-right">
+                    <h6>We accept:</h6>
+                    <ul>
+                      <li><a class="pay-method" ><i class="fa-brands fa-cc-visa"></i></a>
+                      </li>
+                      <li><a class="pay-method" ><i class="fa-brands fa-cc-mastercard"></i></a>
+                      </li>
+                      <li><a class="pay-method" ><i class="fa-brands fa-cc-paypal"></i></a>
+                      </li>
+                      <li><a class="pay-method" ><i class="fa-brands fa-cc-amex"></i></a>
+                      </li>
+                    </ul>
+                    <h6>Customer Service</h6>
+                    <ul class="help-support">
+                      <li><a href="contact.html">contact</a></li>
+                      <li><a href="faq.html">FAq</a></li>
+                    </ul>
+                  </div>
                 </div>
-                <button onclick="topFunction()" id="movetop" title="Go to top">
-                    <i class="fa-solid fa-caret-up"></i>
-                </button>
+              </div>
             </div>
+            <div class="columns col-lg-6 text-lg-right">
+              <p>© 2024 Dokkanah. All rights reserved. </a>
+              </p>
+            </div>
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+              <i class="fa-solid fa-caret-up"></i>
+            </button>
+          </div>
         </div>
-    </section>
+      </div>
     <!-- ========================= Footer Section End================================ -->
 
 

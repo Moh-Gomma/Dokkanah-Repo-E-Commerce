@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
 
 
 * {
@@ -14,7 +14,6 @@
   text-decoration: none;
   list-style: none;
   font-family: "Poppins", sans-serif;
-  ;
 }
 
 :root {
@@ -573,63 +572,6 @@ p {
 /* ==================================== */
 
 
-/* ==================================== */
-/* Discount start */
-/* ===========================[8]========= */
-
-.coun-down {
-  display: flex;
-  align-items: center;
-}
-
-.row {
-  max-width: 100%;
-  position: relative;
-}
-
-.row .discount-text {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 5;
-
-}
-
-.row .discount-text img {
-  width: 100%;
-  height: 100%;
-}
-
-.row .discount-text h1 {
-  color: white;
-  font-size: 2.9rem;
-}
-
-.row .btn-order a {
-  background-color: #666666;
-  position: absolute;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* ============================================================================================= */
-header .links ul .bgg-overley,
-header .links .btn_open_menu,
-header .links ul .logo_menu,
-header .links ul .btn-close-menue {
-  display: none;
-}
-
-
-
-
-
-
-
-
-
 /*======================================
    Start Shop Newsletter CSS
 =============================[10]===========*/
@@ -754,11 +696,6 @@ header .links ul .btn-close-menue {
 
 .footery3m a.logo-footer {
   color: #fff;
-  font-weight: 900;
-  font-family: "Luckiest Guy", cursive;
-
-
-
 }
 
 
@@ -935,7 +872,7 @@ header .links ul .btn-close-menue {
 
 
 .BreadcrumbStart {
-  background: url(../images/backgroundBreadCru.jpg);
+  background: url(../images/General/backgroundBreadCru.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: center;
@@ -973,106 +910,6 @@ header .links ul .btn-close-menue {
 
 
 
-/* ======================================================
-About Page 
-====================================================== */
-
-.aboutourstor {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between
-}
-
-.aboutourstor .image-about img {
-  max-width: 500px;
-  border-radius: 10px;
-}
-
-.aboutourstor .text-about h1 {
-  font-size: 50px;
-  font-weight: bold;
-  font-variant: small-caps;
-}
-
-.aboutourstor .text-about span {
-  color: var(--main-color);
-}
-
-.aboutourstor .text-about .btn {
-  background-color: var(--main-color);
-  color: white;
-  font-weight: 500;
-  border: 1px solid var(--main-color);
-  border-radius: 10px;
-  padding: 10px 30px;
-}
-
-.aboutourstor .text-about .btn:hover {
-  background-color: transparent;
-  color: var(--main-color);
-  /* border: 1px solid var(--main-color); */
-  transition: 0.3s ease;
-}
-
-/* Resposive */
-
-/* //from 760 to 995 */
-@media (min-width: 760px) and (max-width: 995px) {
-  .aboutourstor {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .aboutourstor .text-about {
-    flex: 1;
-    margin-right: 20px;
-  }
-
-  .aboutourstor .image-about img {
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 10px;
-  }
-}
-
-@media (min-width: 950px) {
-  .aboutourstor {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .aboutourstor .text-about {
-    flex: 1;
-    margin-right: 20px;
-  }
-
-  .aboutourstor .image-about img {
-    max-width: 500px;
-    border-radius: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .aboutourstor {
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-  }
-
-  .aboutourstor .text-about {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-}
-
-/*  about section End  */
-/* ================================================================ */
-
-/* About End Here  
-======================================== */
-
 
 
 
@@ -1091,7 +928,6 @@ About Page
 }
 
 
-/* //-- */
 
 
 .card-box {
@@ -1251,6 +1087,97 @@ About Page
 /*          About Page CSS 
 ===============================================*/
 
+/* ======================================================
+About Page 
+====================================================== */
+
+.aboutourstor {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between
+}
+
+.aboutourstor .image-about img {
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.aboutourstor .text-about h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.aboutourstor .text-about span {
+  color: var(--main-color);
+}
+
+.aboutourstor .text-about .btn {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 500;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+.aboutourstor .text-about .btn:hover {
+  background-color: transparent;
+  color: var(--main-color);
+  transition: 0.3s ease;
+}
+
+/* Resposive */
+
+@media (min-width: 760px) and (max-width: 995px) {
+  .aboutourstor {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .aboutourstor .text-about {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .aboutourstor .image-about img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 950px) {
+  .aboutourstor {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .aboutourstor .text-about {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .aboutourstor .image-about img {
+    max-width: 500px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutourstor {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .aboutourstor .text-about {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
 
 /* Team Section
 --------------------------------*/
@@ -1446,7 +1373,7 @@ About Page
 
 
 .dokkanaH-contacts-8 .form-bg-img {
-  background: url("../images/blackfriday.jpg") no-repeat 0px 0px;
+  background: url("../images/General/blackfriday.jpg") no-repeat 0px 0px;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -1810,11 +1737,19 @@ Error Page Start
 .Error i {
   font-size: 90px;
 }
-/* 
+
+
+/* ==============================================================================
+                                      Account Page */
+.hidden-class-info {
+  display: none;
+}
+.btn-group .active {
+background: rgba(93, 87, 87, 0.281);
+}
 
 /* ========================================================================================  */
 /* ===================================    Responsive  ======================================= */
-/* =========================================================================================== */
 
 @media only screen and (min-width: 300px) and (max-width: 1200px) {
 
@@ -1927,3 +1862,4 @@ Error Page Start
     margin-right: 4px;
   }
 }
+
