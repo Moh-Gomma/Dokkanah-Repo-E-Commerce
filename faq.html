@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+    <div class="loader"></div>
     <!-- Navigation Bar[===========================[1] ============================================-->
 
     <header>
@@ -219,6 +219,46 @@
 
 
     <!-- ====================================================================================================== -->
+
+    <div class="cart_section_on_right">
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+
+            <div class="cart-content">
+                <div class="cart-box">
+                    <!-- <img src="images/face3.jpg" class="cart-image" alt="">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Hello</div>
+                        <div class="cart-price">$255</div>
+                        <input type="number" value="1" min="1" class="cart-quantity">
+                    </div>
+                    <i class="fa-solid fa-trash-can cart-remove"></i> -->
+
+                </div>
+            </div>
+            <div class="empty-cart">
+                <p>Your cart is empty.</p>
+                <a href="shop.html" class="btn btn-dark btn-go-shopping">Go shopping</a>
+            </div>
+
+            <section class="willbeHiddeniNEmpty">
+
+                <div class="total-cart-price justify-content-between  py-2 fs-6 w-100">
+                    <div class="total-title">Total Price</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <div class="border-0 justify-content-center text-center w-100 last-item-inCart">
+                    <button type="button" class="btn-buy btn btn-light w-100 rounded-0 py-2 px-4 my-2 fs-6">
+                        <strong>Checkout</strong>
+                    </button>
+                    <a class="text-dark fs-6" href="cartPage.html">View cart</a>
+                </div>
+            </section>
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="close_cart()"></i>
+        </div>
+    </div>
+
+    <!-- ====================================================================================================== -->
     <div class="container mt-5">
         <nav aria-label="breadcrumb">
             <ul class="breadcrumb">
@@ -362,6 +402,15 @@
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Ajax Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Main Js -->
     <script src="js/main.js"></script>
 
