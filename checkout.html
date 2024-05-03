@@ -62,11 +62,12 @@
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <button class="btn d-none d-lg-block" id="userIcon">
-                                    <i class="fa-solid fa-user-tie fa-lg "></i>
+                                    <i class="fa-solid fa-user-tie fa-lg " aria-label="login-register_"></i>
                                 </button>
                             </li>
                             <li class="nav-item d-none d-lg-block d-xl-block me-lg-3">
-                                <button type="button" class="btn position-relative" onclick="open_cart()">
+                                <button type="button" class="btn position-relative" onclick="open_cart()"
+                                    aria-label="cart open">
                                     <i class="fas fa-shopping-cart "></i>
                                     <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
                                         id="cartItemCount">0</span>
@@ -74,7 +75,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <button id="searchIcon" class="btn">
+                                <button id="searchIcon" class="btn" aria-label="Search Button">
                                     <i class="fas fa-search"></i>
                                 </button>
                             </li>
@@ -90,13 +91,13 @@
                 <div class="row justify-content-between">
                     <div class="col-4 text-center">
                         <button type="button" class="btn position-relative" onclick="open_cart()">
-                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-shopping-cart" aria-label="Open Cart"></i>
                             <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
                                 id="cartItemCount_bottom">0</span>
                         </button>
                     </div>
                     <div class="col-4 text-center login_icon_user">
-                        <button class="btn" type="button">
+                        <button class="btn" type="button" aria-label="login-register_">
                             <i class="fa-solid fa-user fa-lg"></i>
                         </button>
                     </div>
@@ -118,7 +119,8 @@
                     <div class="modal-body">
                         <form class="search-form ">
                             <input type="text" class="form-control" placeholder="Search...">
-                            <button type="submit" class="btn btn-danger mt-2 ms-auto w-100">Search</button>
+                            <button type="submit" class="btn btn-danger mt-2 ms-auto w-100"
+                                aria-label="Search Open">Search</button>
                         </form>
                     </div>
                 </div>
@@ -162,7 +164,9 @@
                             </form>
                             <p class="login-register_or_"><span class="login-register_line_"></span><span>or</span><span
                                     class="login-register_line_"></span></p>
-                            <button type="button" class="btn  btn-dark w-100" id="returnToSignUp">Create New
+                            <button type="button" class="btn  btn-dark w-100" id="returnToSignUp"
+                                aria-label="Create Account">Create
+                                New
                                 Account</button>
 
                         </div>
@@ -205,7 +209,8 @@
                                 <p class="login-register_or_"><span
                                         class="login-register_line_"></span><span>or</span><span
                                         class="login-register_line_"></span></p>
-                                <button type="button" class="btn  btn-dark w-100" id="returnToSignIn">Sign In</button>
+                                <button type="button" class="btn  btn-dark w-100" id="returnToSignIn"
+                                    aria-label="Return To Sign in">Sign In</button>
                             </div>
 
                         </div>
@@ -248,7 +253,8 @@
                     <div class="total-price">$0</div>
                 </div>
                 <div class="border-0 justify-content-center text-center w-100 last-item-inCart">
-                    <button type="button" class="btn-buy btn btn-light w-100 rounded-0 py-2 px-4 my-2 fs-6">
+                    <button type="button" class="btn-buy btn btn-light w-100 rounded-0 py-2 px-4 my-2 fs-6"
+                        aria-label="Checkout">
                         <strong>Checkout</strong>
                     </button>
                     <a class="text-dark fs-6" href="cartPage.html">View cart</a>
@@ -296,7 +302,7 @@
                                     <th scope="row">
                                         <div class="d-flex align-items-center mt-2">
                                             <img src="images/product/blouse3.jpg" class="img-fluid rounded-circle"
-                                                style="width: 90px; height: 90px;" alt="">
+                                                style="width: 90px; height: 90px;" alt="product">
                                         </div>
                                     </th>
                                     <td class="py-5">Blouse</td>
@@ -347,7 +353,8 @@
                         </div>
                         <div class="d-flex justify-content-between">
                             <a href="cartPage.html" class="btn btn-info" role="button"> Go Back</a>
-                            <button type="submit" class="btn btn-dark text-nowrap">Complete Order</button>
+                            <button type="submit" class="btn btn-dark text-nowrap" aria-label="Complete Order">Complete
+                                Order</button>
                         </div>
                     </form>
                 </div>
@@ -363,7 +370,7 @@
             <div class="container py-lg-2">
                 <div class="text-txt row">
                     <div class="left-side col-lg-4">
-                        <h3><img src="images/slider/footer.png" style="width: 200px; height: 50px;"=""></h3>
+                        <h3><img src="images/slider/footer.png" style="width: 200px; height: 50px;" alt="Logo"></h3>
 
 
                         <p>We bring you collection of clothing from the world’s most renowned brands. To those who love
@@ -418,7 +425,7 @@
                     </p>
                 </div>
                 <button onclick="topFunction()" id="movetop" title="Go to top">
-                    <i class="fa-solid fa-caret-up"></i>
+                    <i class="fa-solid fa-caret-up" aria-label="Go To Top"></i>
                 </button>
             </div>
         </div>

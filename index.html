@@ -35,195 +35,189 @@
   <header>
     <!-- Top Nav  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/slider/1.png" alt="Logo" width="150" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="navbarNavLabel">Main Menu</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav  mb-lg-0 mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/slider/1.png" alt="Logo" width="150" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navbarNavLabel">Main Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav  mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <button class="btn d-none d-lg-block" id="userIcon">
-                                <i class="fa-solid fa-user-tie fa-lg "></i>
-                            </button>
-                        </li>
-                        <li class="nav-item d-none d-lg-block d-xl-block me-lg-3">
-                            <button type="button" class="btn position-relative" onclick="open_cart()">
-                                <i class="fas fa-shopping-cart "></i>
-                                <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
-                                    id="cartItemCount">0</span>
-                            </button>
-                        </li>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button class="btn d-none d-lg-block" id="userIcon">
+                  <i class="fa-solid fa-user-tie fa-lg " aria-label="login-register_"></i>
+                </button>
+              </li>
+              <li class="nav-item d-none d-lg-block d-xl-block me-lg-3">
+                <button type="button" class="btn position-relative" onclick="open_cart()" aria-label="cart open">
+                  <i class="fas fa-shopping-cart "></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
+                    id="cartItemCount">0</span>
+                </button>
+              </li>
 
-                        <li class="nav-item">
-                            <button id="searchIcon" class="btn">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+              <li class="nav-item">
+                <button id="searchIcon" class="btn" aria-label="Search Button">
+                  <i class="fas fa-search"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- Bottom Icons Section -->
     <div class="fixed-bottom bg-light d-lg-none">
-        <div class="container-fluid">
-            <div class="row justify-content-between">
-                <div class="col-4 text-center">
-                    <button type="button" class="btn position-relative" onclick="open_cart()">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
-                            id="cartItemCount_bottom">0</span>
-                    </button>
-                </div>
-                <div class="col-4 text-center login_icon_user">
-                    <button class="btn" type="button">
-                        <i class="fa-solid fa-user fa-lg"></i>
-                    </button>
-                </div>
-                <div class="col-4 text-center shop_icon_bottom">
-                    <a href="shop.html" class="btn"> <i class="fa-solid fa-shop"></i></a>
-                </div>
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <div class="col-4 text-center">
+            <button type="button" class="btn position-relative" onclick="open_cart()">
+              <i class="fas fa-shopping-cart" aria-label="Open Cart"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
+                id="cartItemCount_bottom">0</span>
+            </button>
+          </div>
+          <div class="col-4 text-center login_icon_user">
+            <button class="btn" type="button" aria-label="login-register_">
+              <i class="fa-solid fa-user fa-lg"></i>
+            </button>
+          </div>
+          <div class="col-4 text-center shop_icon_bottom">
+            <a href="shop.html" class="btn"> <i class="fa-solid fa-shop"></i></a>
+          </div>
 
-            </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal For Search -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form class="search-form ">
-                        <input type="text" class="form-control" placeholder="Search...">
-                        <button type="submit" class="btn btn-danger mt-2 ms-auto w-100">Search</button>
-                    </form>
-                </div>
-            </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="search-form ">
+              <input type="text" class="form-control" placeholder="Search...">
+              <button type="submit" class="btn btn-danger mt-2 ms-auto w-100" aria-label="Search Open">Search</button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
 
     <!-- Modal For Signin Signup  -->
 
     <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
 
-                <div class="modal-header modal-links">
-                    <!-- Sign In button -->
-                    <h5 class="modal-link active" id="signInBtn">Sign In</h5>
-                    <!-- Sign Up button -->
-                    <h5 class="modal-link" id="signUpBtn">Sign Up</h5>
-                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"
-                        style="position: absolute; top: 20px; right: 20px;"></button>
+          <div class="modal-header modal-links">
+            <!-- Sign In button -->
+            <h5 class="modal-link active" id="signInBtn">Sign In</h5>
+            <!-- Sign Up button -->
+            <h5 class="modal-link" id="signUpBtn">Sign Up</h5>
+            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"
+              style="position: absolute; top: 20px; right: 20px;"></button>
+          </div>
+
+          <div class="modal-body">
+            <div id="signInForm" style="display: block;">
+              <form id="signinForm">
+                <div class="form-group">
+                  <label for="signinEmail">Email
+                    <span class="text-danger">*</span>
+                  </label>
+                  <input type="email" class="form-control" id="signinEmail" placeholder="Enter email" required>
                 </div>
-
-                <div class="modal-body">
-                    <div id="signInForm" style="display: block;">
-                        <form id="signinForm">
-                            <div class="form-group">
-                                <label for="signinEmail">Email
-                                    <span class="text-danger">*</span>
-                                </label>
-                                <input type="email" class="form-control" id="signinEmail" placeholder="Enter email"
-                                    required>
-                            </div>
-                            <div class="form-group">
-                                <label for="signinPassword">Password
-                                    <span class="text-danger">*</span>
-                                </label>
-                                <input type="password" class="form-control" id="signinPassword"
-                                    placeholder="Password" required>
-                            </div>
-                            <input type="submit" value="Login" class="btn btn-dark w-100 mb-3">
-                        </form>
-                        <p class="login-register_or_"><span class="login-register_line_"></span><span>or</span><span
-                                class="login-register_line_"></span></p>
-                        <button type="button" class="btn  btn-dark w-100" id="returnToSignUp">Create New
-                            Account</button>
-
-                    </div>
-
-                    <div id="signUpForm" style="display: none;">
-                        <form id="signupForm">
-                            <div class="form-group">
-                                <label for="signupName">Full Name
-                                    <span class="text-danger">*</span>
-                                </label>
-                                <input type="text" class="form-control" id="signupName"
-                                    placeholder="Enter your full name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="signupEmail">Email
-                                    <span class="text-danger">*</span>
-                                </label>
-                                <input type="email" class="form-control" id="signupEmail"
-                                    placeholder="Enter your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="signupPassword">Password
-                                    <span class="text-danger">*</span>
-                                </label>
-                                <input type="password" class="form-control" id="signupPassword"
-                                    placeholder="Enter a strong Password"
-                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-                            </div>
-                            <div class="form-group">
-                                <label for="signupPassword">Confirm Password
-                                    <span class="text-danger">*</span>
-                                </label>
-                                <input type="password" class="form-control" i
-                                    placeholder="Enter Your Password again">
-                            </div>
-                            <input type="submit" class="btn btn-dark w-100" value="Create New Account">
-                        </form>
-                        <div id="signInButton">
-                            <p class="login-register_or_"><span
-                                    class="login-register_line_"></span><span>or</span><span
-                                    class="login-register_line_"></span></p>
-                            <button type="button" class="btn  btn-dark w-100" id="returnToSignIn">Sign In</button>
-                        </div>
-
-                    </div>
+                <div class="form-group">
+                  <label for="signinPassword">Password
+                    <span class="text-danger">*</span>
+                  </label>
+                  <input type="password" class="form-control" id="signinPassword" placeholder="Password" required>
                 </div>
+                <input type="submit" value="Login" class="btn btn-dark w-100 mb-3">
+              </form>
+              <p class="login-register_or_"><span class="login-register_line_"></span><span>or</span><span
+                  class="login-register_line_"></span></p>
+              <button type="button" class="btn  btn-dark w-100" id="returnToSignUp" aria-label="Create Account">Create
+                New
+                Account</button>
+
             </div>
+
+            <div id="signUpForm" style="display: none;">
+              <form id="signupForm">
+                <div class="form-group">
+                  <label for="signupName">Full Name
+                    <span class="text-danger">*</span>
+                  </label>
+                  <input type="text" class="form-control" id="signupName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                  <label for="signupEmail">Email
+                    <span class="text-danger">*</span>
+                  </label>
+                  <input type="email" class="form-control" id="signupEmail" placeholder="Enter your Email" required>
+                </div>
+                <div class="form-group">
+                  <label for="signupPassword">Password
+                    <span class="text-danger">*</span>
+                  </label>
+                  <input type="password" class="form-control" id="signupPassword" placeholder="Enter a strong Password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                </div>
+                <div class="form-group">
+                  <label for="signupPassword">Confirm Password
+                    <span class="text-danger">*</span>
+                  </label>
+                  <input type="password" class="form-control" i placeholder="Enter Your Password again">
+                </div>
+                <input type="submit" class="btn btn-dark w-100" value="Create New Account">
+              </form>
+              <div id="signInButton">
+                <p class="login-register_or_"><span class="login-register_line_"></span><span>or</span><span
+                    class="login-register_line_"></span></p>
+                <button type="button" class="btn  btn-dark w-100" id="returnToSignIn"
+                  aria-label="Return To Sign in">Sign In</button>
+              </div>
+
+            </div>
+          </div>
         </div>
+      </div>
 
 
 
     </div>
-</header>
-  <!-- ========================= [Card Section] =======[2]============================== -->
+  </header>
+  <!-- ========================= [Card Section]=======[2]============================== -->
   <div class="cart_section_on_right">
     <div class="cart">
       <h2 class="cart-title">Your Cart</h2>
@@ -252,7 +246,7 @@
           <div class="total-price">$0</div>
         </div>
         <div class="border-0 justify-content-center text-center w-100 last-item-inCart">
-          <button type="button" class="btn-buy btn btn-light w-100 rounded-0 py-2 px-4 my-2 fs-6">
+          <button type="button" class="btn-buy btn btn-light w-100 rounded-0 py-2 px-4 my-2 fs-6" aria-label="Checkout">
             <strong>Checkout</strong>
           </button>
           <a class="text-dark fs-6" href="cartPage.html">View cart</a>
@@ -310,22 +304,22 @@
     <div class="container text-center">
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center p-3">
-          <img src="images/features/free-delivery.png" class="img-fluid" alt="">
+          <img src="images/features/free-delivery.png" class="img-fluid" alt="features1">
           <h4 class="mt-3 mb-2">Free Shipping</h4>
           <p>Free Shipping on All Orders</p>
         </div>
         <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center p-3">
-          <img src="images/features/reimbursement.png" class="img-fluid" alt="">
+          <img src="images/features/reimbursement.png" class="img-fluid" alt="features2">
           <h4 class="mt-3 mb-2">Money guarantee</h4>
           <p>30 Day Money Back</p>
         </div>
         <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center p-3">
-          <img src="images/features/support.png" class="img-fluid" alt="">
+          <img src="images/features/support.png" class="img-fluid" alt="features3">
           <h4 class="mt-3 mb-2">Online Support</h4>
           <p>Technical Support</p>
         </div>
         <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center p-3">
-          <img src="images/features/securePay.png" class="img-fluid" alt="">
+          <img src="images/features/securePay.png" class="img-fluid" alt="features4">
           <h4 class="mt-3 mb-2">Secure Payment</h4>
           <p>Encrypted Payment</p>
         </div>
@@ -345,7 +339,7 @@
         <div class="view overlay z-depth-1-half">
           <div class="glass_hover"></div>
           <a href="shop.html"></a>
-          <img src="images/General/WomenCategory.jpg" class="img-fluid" alt="">
+          <img src="images/General/WomenCategory.jpg" class="img-fluid" alt="WomenCategory">
           <div class="content">
             <h1 class="text-nowrap">WOMEN Collection</h1>
           </div>
@@ -358,7 +352,7 @@
         <div class="view overlay z-depth-1-half">
           <div class="glass_hover"></div>
           <a href="shop.html"></a>
-          <img src="images/General/kidsCategory.jpg" class="img-fluid" alt="">
+          <img src="images/General/kidsCategory.jpg" class="img-fluid" alt="kidsCategory">
           <div class="content">
             <h1 class="text-nowrap">Kids COLLECTION</h1>
           </div>
@@ -371,7 +365,7 @@
         <div class="view overlay z-depth-1-half">
           <div class="glass_hover"></div>
           <a href="shop.html"></a>
-          <img src="images/General/Men Category.jpg" class="img-fluid" alt="">
+          <img src="images/General/Men Category.jpg" class="img-fluid" alt="Category">
           <div class="content">
             <h1 class="text-nowrap">MEN Collection</h1>
           </div>
@@ -387,7 +381,7 @@
       <div class="col-md-6 mb-3">
 
         <div class="view overlay z-depth-1-half">
-          <img src="images/banner/All Category.jpg" class="img-fluid" alt="">
+          <img src="images/banner/All Category.jpg" class="img-fluid" alt="Category">
           <a href="shop.html"></a>
           <div class="content">
             <h1>All Categories</h1>
@@ -400,7 +394,7 @@
       <div class="col-md-6 mb-3">
 
         <div class="view overlay z-depth-1-half">
-          <img src="images/banner/comming-soon.jpg" class="img-fluid" alt="">
+          <img src="images/banner/comming-soon.jpg" class="img-fluid" alt="comming">
           <div class="content">
             <h1>Suits for Men <br>
               <small>Comming Soon</small< /h1>
@@ -547,7 +541,7 @@
           </div>
           <div class="col-lg-6">
             <div class="position-relative">
-              <img src="images/banner/bannerdiscount.jpg" class="img-fluid w-100 rounded" alt="">
+              <img src="images/banner/bannerdiscount.jpg" class="img-fluid w-100 rounded" alt="bannerdiscount">
 
             </div>
           </div>
@@ -567,17 +561,18 @@
 
       <div class="clients-slider swiper">
         <div class="swiper-wrapper align-items-center">
-          <div class="swiper-slide"><img src="images/brands/american-apparel.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="images/brands/american-apparel.png" class="img-fluid" alt="swiper"></div>
           <div class="swiper-slide"><img src="images/brands/american-eagle-outfitters-logo-black-and-white.png"
               class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="images/brands/calvin-klein-logo.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="images/brands/addidas.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="images/brands/calvin-klein-logo.png" class="img-fluid" alt="swiper"></div>
+          <div class="swiper-slide"><img src="images/brands/addidas.png" class="img-fluid" alt="swiper"></div>
           <div class="swiper-slide"><img src="images/brands/converse-logo-black-and-white-1.png" class="img-fluid"
               alt=""></div>
-          <div class="swiper-slide"><img src="images/brands/Zara_(retailer)-Logo.wine.png" class="img-fluid" alt="">
+          <div class="swiper-slide"><img src="images/brands/Zara_(retailer)-Logo.wine.png" class="img-fluid"
+              alt="swiper">
           </div>
-          <div class="swiper-slide"><img src="images/brands/american-apparel.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="images/brands/chanel-logo.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="images/brands/american-apparel.png" class="img-fluid" alt="swiper"></div>
+          <div class="swiper-slide"><img src="images/brands/chanel-logo.png" class="img-fluid" alt="swiper"></div>
         </div>
 
       </div>
@@ -595,18 +590,15 @@
   <section class="shop-newsletter section">
     <div class="containerclass">
       <div class="inner-top">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2 col-12">
-            <!-- Start  -->
-            <div class="inner">
-              <h4>Newsletter</h4>
-              <p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
-              <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                <input name="EMAIL" placeholder="Your email address" required="" type="email">
-                <button class="btn">Subscribe</button>
-              </form>
-            </div>
-            <!-- End  Inner -->
+        <div class="col-lg-8 offset-lg-2 col-12">
+          <!-- Start  -->
+          <div class="inner">
+            <h4>Newsletter</h4>
+            <p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
+            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+              <input name="EMAIL" placeholder="Your email address" required="" type="email">
+              <button class="btn" aria-label="Subscribe">Subscribe</button>
+            </form>
           </div>
         </div>
       </div>
@@ -619,69 +611,69 @@
 
   <div class="footery3m">
     <div class="footer-tany py-3">
-        <div class="container py-lg-2">
-            <div class="text-txt row">
-                <div class="left-side col-lg-4">
-                    <h3><img src="images/slider/footer.png" style="width: 200px; height: 50px;"=""></h3>
+      <div class="container py-lg-2">
+        <div class="text-txt row">
+          <div class="left-side col-lg-4">
+            <h3><img src="images/slider/footer.png" style="width: 200px; height: 50px;" alt="Logo"></h3>
 
 
-                    <p>We bring you collection of clothing from the world’s most renowned brands. To those who love
-                        to stay ahead of fashion trends and desire premium quality and style </p>
+            <p>We bring you collection of clothing from the world’s most renowned brands. To those who love
+              to stay ahead of fashion trends and desire premium quality and style </p>
 
-                    <div class="social mt-lg-5 mt-4">
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <div class="social mt-lg-5 mt-4">
+              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
 
-                    </div>
+            </div>
+          </div>
+
+          <div class="right-side col-lg-8 pl-lg-4">
+
+            <div class="sub-columns">
+              <div class="sub-one-left">
+                <h6>Common Links</h6>
+                <div class="footer-tany-ul">
+                  <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a href="contact.html">Special</a></li>
+                  </ul>
+
                 </div>
 
-                <div class="right-side col-lg-8 pl-lg-4">
-
-                    <div class="sub-columns">
-                        <div class="sub-one-left">
-                            <h6>Common Links</h6>
-                            <div class="footer-tany-ul">
-                                <ul>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a>Blog</a></li>
-                                    <li><a href="contact.html">Special</a></li>
-                                </ul>
-
-                            </div>
-
-                        </div>
-                        <div class="sub-two-right">
-                            <h6>We accept:</h6>
-                            <ul>
-                                <li><a class="pay-method"><i class="fa-brands fa-cc-visa"></i></a>
-                                </li>
-                                <li><a class="pay-method"><i class="fa-brands fa-cc-mastercard"></i></a>
-                                </li>
-                                <li><a class="pay-method"><i class="fa-brands fa-cc-paypal"></i></a>
-                                </li>
-                                <li><a class="pay-method"><i class="fa-brands fa-cc-amex"></i></a>
-                                </li>
-                            </ul>
-                            <h6>Customer Service</h6>
-                            <ul class="help-support">
-                                <li><a href="contact.html">contact</a></li>
-                                <li><a href="faq.html">FAq</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div class="sub-two-right">
+                <h6>We accept:</h6>
+                <ul>
+                  <li><a class="pay-method"><i class="fa-brands fa-cc-visa"></i></a>
+                  </li>
+                  <li><a class="pay-method"><i class="fa-brands fa-cc-mastercard"></i></a>
+                  </li>
+                  <li><a class="pay-method"><i class="fa-brands fa-cc-paypal"></i></a>
+                  </li>
+                  <li><a class="pay-method"><i class="fa-brands fa-cc-amex"></i></a>
+                  </li>
+                </ul>
+                <h6>Customer Service</h6>
+                <ul class="help-support">
+                  <li><a href="contact.html">contact</a></li>
+                  <li><a href="faq.html">FAq</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="columns col-lg-6 text-lg-right">
-                <p>© 2024 Dokkanah. All rights reserved. </a>
-                </p>
-            </div>
-            <button onclick="topFunction()" id="movetop" title="Go to top">
-                <i class="fa-solid fa-caret-up"></i>
-            </button>
+          </div>
         </div>
+        <div class="columns col-lg-6 text-lg-right">
+          <p>© 2024 Dokkanah. All rights reserved. </a>
+          </p>
+        </div>
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+          <i class="fa-solid fa-caret-up" aria-label="Go To Top"></i>
+        </button>
+      </div>
     </div>
-</div>
+  </div>
   <!-- ========================= Footer Section End================================ -->
 
 
@@ -713,4 +705,5 @@
     new WOW().init();
   </script>
 </body>
+
 </html>
