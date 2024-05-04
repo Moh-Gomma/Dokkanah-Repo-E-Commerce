@@ -481,10 +481,9 @@ p {
 } */
 
 .hr-btm{
-  width: 60px;
-  height: 5px;
-  font-weight: bold;
-  color: var(--main-color);
+  width: 100px;
+  border-radius: 3px;
+  border: 5px solid var(--main-color);
 }
 .display-header .btn-right {
   text-decoration: underline;
@@ -1534,7 +1533,7 @@ About Page
 }
 
 .title h1 {
-  color: #1b1919;
+  color: #1C486F;
   text-align: center;
   font-weight: 800;
   font-size: 36px;
