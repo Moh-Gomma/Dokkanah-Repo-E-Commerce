@@ -198,12 +198,13 @@ p {
   background: #fff;
   padding: 30px;
   border-left: 1px solid var(--border-color);
-  z-index: 5000;
+  z-index: -100;
   transition: 0.5s ease;
 }
 
 .cart.active {
   right: 0;
+  z-index: 5000;
 }
 
 .cart-title {
@@ -346,7 +347,7 @@ p {
 /* start features */
 /* ==================================== */
 .features img {
-  width: 50px; 
+  width: 50px;
 }
 
 .features h4 {
@@ -366,7 +367,7 @@ p {
  banner starrt 
 /* ==================================== */
 
-.z-depth-1-half{
+.z-depth-1-half {
   width: 100%;
   position: relative;
 }
@@ -480,11 +481,12 @@ p {
   
 } */
 
-.hr-btm{
+.hr-btm {
   width: 100px;
   border-radius: 3px;
   border: 5px solid var(--main-color);
 }
+
 .display-header .btn-right {
   text-decoration: underline;
   color: var(--parg-color)
@@ -567,6 +569,37 @@ p {
   }
 }
 
+
+.swiper-container {
+  position: relative;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.swiper-button-next {
+  right: -30px;
+}
+
+.swiper-button-prev {
+  left: -30px;
+}
 /* Slider Top sale End */
 /* ==================================== */
 
@@ -574,7 +607,7 @@ p {
 /*======================================
    Start Shop Newsletter CSS
 =============================[10]===========*/
-.shop-newsletter{
+.shop-newsletter {
   margin: 15px 0;
 }
 
@@ -1335,8 +1368,8 @@ About Page
 }
 
 
-.dokkanaH-contacts-8{
-  margin: 20px 0 0 0 ;
+.dokkanaH-contacts-8 {
+  margin: 20px 0 0 0;
 }
 
 .dokkanaH-contacts-8 .map iframe {
@@ -1371,10 +1404,12 @@ About Page
   font-weight: 800;
   font-size: 40px;
 }
-.form span{
+
+.form span {
   color: var(--main-color);
   z-index: 669000;
 }
+
 .dokkanaH-contacts-8 .layer {
   background: rgba(0, 0, 0, 0.6);
 }
@@ -1628,8 +1663,8 @@ About Page
  start product details page --Esraa  
 =======================================================*/
 
-.productDetailsss{
-  margin: 20px 0 ;
+.productDetailsss {
+  margin: 20px 0;
 }
 
 
@@ -1649,8 +1684,9 @@ About Page
   margin: 20px 0;
   font-weight: 600;
 }
+
 @media (max-width: 900px) {
-  .discount-cont{
+  .discount-cont {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1659,6 +1695,7 @@ About Page
     justify-content: center;
   }
 }
+
 .price-dicount {
   margin-top: 35px;
   font-size: 35px;
@@ -1691,10 +1728,10 @@ About Page
 
 @media (max-width: 767.98px) {
   .btn-lg {
-      padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
-  .maxWidthButtons{
+  .maxWidthButtons {
     flex-direction: column;
     gap: 20px;
   }
@@ -1707,7 +1744,7 @@ Checkout Page Start
 =========================================================================================== */
 
 @media(max-width: 770px) {
-  .checkoutPgaeCont{
+  .checkoutPgaeCont {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -1719,9 +1756,10 @@ Checkout Page Start
 Error Page Start 
 =========================================================================================== */
 
-.Error .Error-pa{
+.Error .Error-pa {
   line-height: 50px;
 }
+
 .Error i {
   font-size: 90px;
 }
@@ -1732,8 +1770,9 @@ Error Page Start
 .hidden-class-info {
   display: none;
 }
+
 .btn-group .active {
-background: rgba(93, 87, 87, 0.281);
+  background: rgba(93, 87, 87, 0.281);
 }
 
 /* ========================================================================================  */
@@ -1742,7 +1781,7 @@ background: rgba(93, 87, 87, 0.281);
 @media only screen and (min-width: 300px) and (max-width: 1200px) {
 
   .shop-newsletter .newsletter-inner input {
-      width: 300px;
+    width: 300px;
   }
 
 }
@@ -1752,25 +1791,25 @@ background: rgba(93, 87, 87, 0.281);
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
 
-  
+
   /* Email; */
   .shop-newsletter .newsletter-inner input {
-      width: 330px;
-      height: 42px;
-      padding: 0 20px;
-      border-radius: 30px;
-      margin-bottom: 10px;
-      display: block;
-      text-align: center;
+    width: 330px;
+    height: 42px;
+    padding: 0 20px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
   }
 
   .shop-newsletter .newsletter-inner .btn {
-      height: 42px;
-      padding: 10px 15px;
-      width: 330px;
-      border-radius: 30px;
-      left: 0;
-      display: block;
+    height: 42px;
+    padding: 10px 15px;
+    width: 330px;
+    border-radius: 30px;
+    left: 0;
+    display: block;
   }
 
 }
@@ -1782,12 +1821,12 @@ background: rgba(93, 87, 87, 0.281);
 
   /* Email */
   .shop-newsletter .newsletter-inner .btn {
-      height: 42px;
-      padding: 10px 15px;
-      width: 100%;
-      border-radius: 30px;
-      left: 0;
-      display: block;
+    height: 42px;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 30px;
+    left: 0;
+    display: block;
   }
 
 
@@ -1850,4 +1889,6 @@ background: rgba(93, 87, 87, 0.281);
     margin-right: 4px;
   }
 }
+
+
 

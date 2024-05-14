@@ -109,6 +109,7 @@
               <th scope="col">Name</th>
               <th scope="col">Image</th>
               <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
               <th scope="col">Stock</th>
               <th scope="col">Action</th>
             </tr>
@@ -119,10 +120,13 @@
               <td > <strong>T-shirt</strong></td>
               <td ><img src="images/General/profile.png" alt="Product Image" class="rounded-circle rounded-circle-dash"></td>
               <td >$19.99</td>
+
+              <td>20 Item</td>
               <td >
                 <span class="badge badge-dashboard rounded-pill bg-info in-stock ">In Stock</span>
                 <span class="badge badge-dashboard rounded-pill bg-danger outof-stock d-none">OUt of Stock</span>
               </td>
+             
               <td >
                 <button class="btn btn-primary btn-sm me-2 edit-btn" arial-label="Edit" data-bs-toggle="modal" data-bs-target="#editProductModal"><i class="fas fa-edit"></i></button>
                 <button class="btn btn-danger btn-sm delete-btn" aria-label="Delete"><i class="fas fa-trash"></i></button>
@@ -133,6 +137,7 @@
               <td > <strong>T-shirt</strong></td>
               <td ><img src="images/General/profile.png" alt="Product Image" class="rounded-circle rounded-circle-dash "></td>
               <td >$19.99</td>
+              <td>20 Item</td>
               <td >
                 <span class="badge badge-dashboard rounded-pill bg-info in-stock ">In Stock</span>
                 <span class="badge badge-dashboard rounded-pill bg-danger outof-stock d-none">OUt of Stock</span>
@@ -167,7 +172,11 @@
           </div>
           <div class="mb-3">
             <label for="productImage" class="form-label">Image</label>
-            <input type="file" class="form-control" id="productImage" accept="image/*">
+            <input type="text" class="form-control" id="productImage" >
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Enter Product Description" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Description</label>
           </div>
 
           
@@ -201,9 +210,12 @@
           </div>
           <div class="mb-3">
             <label for="productImage" class="form-label">Image</label>
-            <input type="file" class="form-control" id="productImage" accept="image/*">
+            <input type="text" class="form-control" id="productImage" >
           </div>
-         
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Enter Product Description" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Description</label>
+          </div>
         </form>
       </div>
       <div class="modal-footer">

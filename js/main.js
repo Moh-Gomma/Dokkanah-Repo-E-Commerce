@@ -161,7 +161,7 @@ const priceRange = document.getElementById('priceRange');
 const rangeValue = document.getElementById('rangeValue');
 
 filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', () => { 
         const filter = btn.dataset.filter;
         filterItems.forEach(item => {
             if (filter === 'all') {
